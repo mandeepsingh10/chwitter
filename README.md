@@ -27,11 +27,3 @@ cd chwitter
 docker-compose up
 go to localhost:3000 to check the app.
 ```
-
-## Available commands
-
-Running commands with npm `npm run [command]`
-
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
