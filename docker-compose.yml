@@ -1,17 +1,5 @@
 version: '2'
 services:
-  nxtjs-frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    restart: always
-    ports:
-      - "3000:3000" 
-    depends_on:
-      - mongodb-primary
-      - mongodb-secondary
-      - mongodb-arbiter    
-
   mongodb-primary:
     image: 'bitnami/mongodb:latest'
     environment:
@@ -52,6 +40,18 @@ services:
       - MONGODB_REPLICA_SET_KEY=replicasetkey123
     ports:
       - 27037:27017
+
+  nxtjs-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb-primary
+      - mongodb-secondary
+      - mongodb-arbiter
 
 volumes:
   mongodb_master_data:
