@@ -1,8 +1,10 @@
-# The original Full stack application is developed by https://github.com/AntonioErdeljac/twitter-clone. All the credit for the application development goes to him and I do not intend to take any credit for it. 
+## The original Full stack application is developed by https://github.com/AntonioErdeljac/twitter-clone. All the credit for the application development goes to him and I do not intend to take any credit for it. 
 
-# What I have done is Dockerized this app, which was a complicated task because it uses prisma with MongoDB, we need MongoDB replica sets to establish the connectivity between prisma and MongoDB. After hours of trying to fix the problem, I think I have found the fix.
+## What I have done is Dockerized this app, which was a complicated task because it uses prisma with MongoDB, we need MongoDB replica sets to establish the connectivity between prisma and MongoDB.
 
-# Please feel free to Check out the Dockerize version.
+## For the original app Antonio uses MongoDB Atlas and Vercel to deploy the app, but I wanted to dockerize it so that we can run it on our local machine and to experience what itactually takes to create a containerized app. It took some effort but it's done. 
+
+## Please feel free to check out the Dockerized version.
 
  
 
