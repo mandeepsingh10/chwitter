@@ -1,16 +1,13 @@
 version: '2'
 services:
-  nxtjs-frontend:
+  twitter:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: twitter-app
     restart: always
     ports:
-      - "3000:3000" 
-    depends_on:
-      - mongodb-primary
-      - mongodb-secondary
-      - mongodb-arbiter    
+      - "3000:3000"  
 
   mongodb-primary:
     image: 'bitnami/mongodb:latest'
